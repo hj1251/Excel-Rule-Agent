@@ -43,56 +43,6 @@ The system:
 
 ---
 
-## Architecture
-
-User Input
-↓
-
-OpenAI API
-↓
-
-rules.json
-↓
-
-Excel Executor
-↓
-
-output.xlsx
-
----
-
-## Project Structure
-
-excel-agent/
-
-├── create_rule.py
-
-Convert natural language into rules
-
-├── execute_rule.py
-
-Apply rules to templates
-
-├── input.xlsx
-
-Source template
-
-├── output.xlsx
-
-Generated result
-
-├── rules.json
-
-Saved business rules
-
-├── .env
-
-API credentials
-
-└── README.md
-
----
-
 ## Example
 
 Input:
@@ -120,11 +70,3 @@ Output:
 | DEL/EVRI |
 
 ---
-
-## Installation
-
-```bash
-pip install openai
-pip install pandas
-pip install python-dotenv
-pip install openpyxl
